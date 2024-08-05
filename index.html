@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Location Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js" integrity="sha512-M86w4FjKv2HkR9PqP1Fb4FFJ3B5s5K4hD7MCsM1hhJg9Zj5N6hbHUtFEL1v+5b5mHBCMzhDmbFr0bB9eUlb+GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/2.1.1/tesseract.min.js" integrity="sha512-8AxQNImzeNj1VFSIPK9gYz9j/MzIfiHHRWtgdYLr1d+RNwczo+2CPoU5cxdUIt7A3HON6E7/9Y8mlWGeT6L+4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="/" id="logo">IP Location Finder</a></h1>
+        <input type="file" id="fileInput" accept="image/*">
+        <button id="getMyIP">Get My IP Location</button>
+        <button id="clearResult">Clear</button>
+        <button id="reportWrongIP" style="display: none;">No IP?</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
